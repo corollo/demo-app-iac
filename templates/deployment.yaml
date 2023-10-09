@@ -30,7 +30,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
           - name: version
-            value: {{ .Values.application.version }}
+            value: {{ .Values.image.tag }}
           - name: env
             value: {{ .Values.application.env }}
           - name: color
