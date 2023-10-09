@@ -51,6 +51,5 @@ tolerations: []
 affinity: {}
 
 application:
-  version: 1.2.4-beta.1
   color: red
   env: dev

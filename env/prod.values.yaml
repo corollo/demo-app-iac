@@ -51,6 +51,5 @@ tolerations: []
 affinity: {}
 
 application:
-  version: 1.2.3
   color: blue
   env: prod
