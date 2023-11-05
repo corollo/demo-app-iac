@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "demo-app-iac.fullname" . }}
+  labels:
+    {{- include "demo-app-iac.labels" . | nindent 4 }}  
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /{{ include "demo-app-iac.fullname" . }}-{{ .Values.application.env }}
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "demo-app-iac.fullname" . }}
+                port:
+                  number: {{ .Values.service.port }}
