@@ -11,9 +11,12 @@ image:
   tag: "1.0.0"
 
 imagePullSecrets:
-- name: dockerhub-secret
+  - name: dockerhub-secret
 nameOverride: ""
 fullnameOverride: ""
+
+ingress:
+  enabled: false
 
 podAnnotations: {}
 

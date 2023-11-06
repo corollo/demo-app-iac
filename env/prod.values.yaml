@@ -15,6 +15,9 @@ imagePullSecrets:
 nameOverride: ""
 fullnameOverride: ""
 
+ingress:
+  enabled: false
+  
 podAnnotations: {}
 
 podSecurityContext: {}
