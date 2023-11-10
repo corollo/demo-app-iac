@@ -7,9 +7,10 @@ metadata:
     {{- include "demo-app-iac.labels" . | nindent 4 }}  
 spec:
   rules:
-    - http:
+    - host: {{ include "demo-app-iac.fullname" . }}.com 
+      http:
         paths:
-          - path: /{{ include "demo-app-iac.fullname" . }}-{{ .Values.application.env }}
+          - path: /
             pathType: Prefix
             backend:
               service:

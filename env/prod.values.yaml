@@ -16,7 +16,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 ingress:
-  enabled: false
+  enabled: true
   
 podAnnotations: {}
 
