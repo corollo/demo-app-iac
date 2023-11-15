@@ -8,7 +8,7 @@ image:
   repository: corollo/demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0.11-beta.8"
+  tag: "1.0.11-beta.7"
 
 imagePullSecrets:
   - name: dockerhub-secret
